@@ -185,7 +185,7 @@ body {
         height: 809px;
     }
     .first_container{
-        width:100vw;
+        width:375px;
         height: 50%;
         border-radius: 0 0 15px 15px;
     }
@@ -202,7 +202,8 @@ body {
         font-size: 50px;
     }
     .second_container{
-        width: 100vw;
+        width: 375px;
+		
         height: 50%;
         margin: 0;
         padding: 0;
