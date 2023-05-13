@@ -1,0 +1,223 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+   font-size: 18px;
+   color: hsl(241, 100%, 89%);
+   font-family: 'Hanken Grotesk';
+}
+
+.concon{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(0, 0%, 100%);
+}
+
+.main_container {
+    width: 400px;
+    height: 300px;
+    display: flex;
+    border-radius: 15px;
+    box-shadow: 5px 9px 35px hsl(221, 100%, 96%), -5px -2px 15px hsl(221, 100%, 96%);
+}
+
+.first_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 12px;
+    background: linear-gradient(to bottom, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    width: 50%;
+    padding: 15px;
+}
+
+.result {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    background:linear-gradient(to bottom, hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+    border-radius: 50%;
+    text-align: center;
+    color: hsl(0, 0%, 100%);
+}
+
+.result span {
+    font-size: 10px;
+    color: hsl(241, 100%, 89%);;
+}
+
+.p_bold{
+    font-size: 40px;
+}
+
+.result_comment{
+    text-align: center;
+    font-size: 14px;
+}
+
+.result_comment span {
+    display: block;
+    font-size: 20px;
+    color: hsl(0, 0%, 100%);
+    padding:0 0 15px 0;
+    margin: 0;
+}
+
+.second_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 0 12px 12px 0;
+    background-color: white;
+    width: 50%;
+    padding: 15px;
+}
+
+.summary {
+    width: 160px;
+    display: flex;
+    color: #303b59;
+    justify-content: left;
+    margin: 0;
+}
+
+.tabs {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.tabs > div {
+    display: flex;
+    justify-content: space-around;
+    height: 40px;
+    width: 160px;
+    margin-top: 10px;
+    border-radius: 5px;
+    font-size: 15px;
+    
+}
+
+.tabs > div > div {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.tabs span {
+    color: hsl(224, 30%, 27%);
+    font-size: large;
+}
+
+.tabs img {
+    width: 20px;
+    height: 20px;
+    padding-right: 4px;
+}
+
+.score {
+    color: hsl(241, 100%, 89%);
+}
+
+.reaction {
+    background: hsl(6, 100%, 98%);
+    color: hsl(0, 100%, 67%);
+}
+
+.memory {
+    background: hsl(42, 100%, 97%);
+    color: hsl(39, 100%, 56%);
+}
+
+.verbal {
+    background: hsl(173, 53%, 97%);
+    color: hsl(166, 100%, 37%);
+}
+
+.visual {
+    background: hsl(221, 100%, 96%);
+    color:hsl(234, 85%, 45%);
+    justify-content: left;
+}
+
+.button {
+    display: flex;
+    background-color: hsl(224, 30%, 27%);
+    width: 160px;
+    height: 30px;
+    border-radius: 15px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.button:hover {
+    background:hsl(241, 81%, 54%);
+    cursor: pointer;
+}
+
+.button a {
+    text-decoration: none;
+    font-size: 12px;
+    color:hsl(0, 0%, 100%);
+}
+
+@media screen and (max-width: 375px){
+    .concon{
+        width: 370px;
+    }
+    .main_container{
+        display: flex;
+        flex-direction: column;
+        width: 370px;
+        height: 809px;
+    }
+    .first_container{
+        width:100vw;
+        height: 50%;
+        border-radius: 0 0 15px 15px;
+    }
+    .result{
+        width: 150px;
+        height: 150px;
+        font-size: 15px;
+    }
+    .result_comment {
+        text-align: center;
+        font-size: 20px;
+    }
+    .p_bold {
+        font-size: 50px;
+    }
+    .second_container{
+        width: 100vw;
+        height: 50%;
+        margin: 0;
+        padding: 0;
+    }
+    .tabs > div {
+        display: flex;
+        justify-content: space-between;
+        height: 40px;
+        width: 300px;
+        padding: 15px;
+        margin-top: 10px;
+        border-radius: 5px;
+        font-size: 15px;
+				}
+    .summary, .button {
+        width: 300px;
+    }
+}
